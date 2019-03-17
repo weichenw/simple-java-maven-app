@@ -17,18 +17,6 @@
 </dependency>
   </dependencies>
 	<build>
-		<sourceDirectory>src</sourceDirectory>
-		<resources>
-			<resource>
-				<directory>src</directory>
-				<includes>
-					<include>**</include>
-				</includes>
-				<excludes>
-					<exclude>**/*.java</exclude>
-				</excludes>
-			</resource>
-		</resources>
 	
 		<plugins>
 
@@ -41,6 +29,15 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.7.0</version>
+				        <configuration>
+          		<archive>
+           		 <manifest>
+              		<addClasspath>true</addClasspath>
+              		<classpathPrefix>lib/</classpathPrefix>
+              		<mainClass>com.mycompany.app.App</mainClass>
+            		</manifest>
+          		</archive>
+        		</configuration>
 			</plugin>
 			<plugin>
 				<artifactId>maven-clean-plugin</artifactId>
