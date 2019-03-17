@@ -50,10 +50,10 @@
 					<webResources>
 						<resource>
 							<!-- this is relative to the pom.xml directory -->
-							<directory>${project.basedir}</directory>
+							<directory>${project.basedir}/src</directory>
 						</resource>
 						<webResource>
-							<directory>${project.basedir}</directory>
+							<directory>${project.basedir}/src</directory>
 						</webResource>
 					</webResources>
 					<warName>testjenkinsmaven</warName>
