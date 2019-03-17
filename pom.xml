@@ -79,8 +79,7 @@
 						<phase>none</phase>
 					</execution>
 					<execution>
-						<!-- Last step is to make sure that the war is built in the package 
-							phase -->
+
 						<id>custom-war</id>
 						<phase>package</phase>
 						<goals>
