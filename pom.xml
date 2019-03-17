@@ -74,7 +74,7 @@
 				</configuration>
 				<executions>
 					<execution>
-						<!-- First step is to disable the default-war build step. -->
+
 						<id>default-war</id>
 						<phase>none</phase>
 					</execution>
